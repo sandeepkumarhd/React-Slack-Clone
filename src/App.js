@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import Register from "./Components/auth/Register";
+import Login from "./Components/auth/Login";
+import General from "./Components/General/General";
+import SideNavBar from "./Components/Header/SideNavbar";
+import { Route, Routes } from "react-router-dom";
+import { useEffect } from "react";
+import { useState } from "react";
 
 function App() {
+  const [isLogin,setIsLogin] = useState(false)
+  useEffect(() =>{
+let user = localStorage.getItem("user")
+if(user){
+  setIsLogin(true)
+}
+  },[])
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {isLogin && <SideNavBar />}
+      <Routes>
+       {!isLogin && <Route exact path="/" element={<Register />} />}
+        {/* <Route path="*" element={<SideNavBar />} /> */}
+        <Route exact path="/login" element={<Login />} />
+        {isLogin && <Route exact path="/General" element={<General />}></Route>}
+      </Routes>
     </div>
   );
 }

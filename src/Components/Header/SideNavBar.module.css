@@ -1,0 +1,56 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+aside nav ul{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+}
+aside div input {
+    width: 60%;
+    height: 2rem;
+    text-align: start;
+    position: sticky;
+    margin-left: 1rem;
+    border-radius: 0.3rem;
+}
+aside div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+aside nav ul li{
+   margin: 0.2rem 0rem;
+   color: white;
+   font-size: 1.2rem;
+   width: 100%;
+   text-align: center;
+   padding: 0.4rem 0rem;
+}
+aside nav ul li:hover{
+   background-color: rgb(44, 25, 73);
+   width: 100%;
+   border-radius: 1rem;
+   cursor: pointer;
+}
+aside nav{
+   width: 100%;
+   height: 100vh;
+   background-color: rgb(29, 8, 51);
+}
+aside{
+    width: 20%;
+    height: 100vh;
+
+    position: fixed;
+    background-color: rgb(248, 251, 251);
+}
+hr{
+    width: 100%;
+}

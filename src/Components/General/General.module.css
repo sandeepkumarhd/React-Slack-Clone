@@ -1,0 +1,60 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.general section {
+  width: 80%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: rgb(192, 188, 196);
+}
+.general section:first-child input {
+  width: 80%;
+  height: 6vh;
+  font-size: 1.5rem;
+  background-color: rgb(182, 196, 238);
+}
+.general section:first-child {
+  font-size: 2rem;
+}
+.watch {
+  font-size: 2.5rem;
+  margin-right: 2rem;
+}
+.search {
+  display: flex;
+  width: 80%;
+  justify-content: center;
+  position: fixed;
+}
+.newMessage {
+  position: fixed;
+  bottom: 1rem;
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+}
+button {
+  cursor: pointer;
+}
+main{
+    background-color: rgb(119, 123, 116);
+    margin: 1rem;
+}
+.email{
+    color: blue;
+    font-size: 1.2rem;
+    background-color: rgb(188, 236, 238);
+}
+.messages{
+    color: black;
+    font-size: 1.4rem;
+}
+.allMessages{
+    height: 80vh;
+    background-color: rgb(150, 150, 155);
+    margin: 5rem 0rem;
+    overflow-y: scroll;
+}

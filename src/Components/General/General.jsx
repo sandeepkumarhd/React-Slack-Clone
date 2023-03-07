@@ -1,11 +1,13 @@
 import style from "./General.module.css";
 import { BsStopwatch } from "react-icons/bs";
 import { useState, useEffect } from "react";
+
 import axios from "axios";
 
 const General = () => {
   const [message, setMessage] = useState("");
   const [data, setData] = useState([]);
+  const [searchInput, setSearchInput] = useState("");
   const firebaseMessageHandler = () => {
     const userEmailId = localStorage.getItem("userEmail");
     if (message.length <= 0) {
@@ -54,7 +56,7 @@ const General = () => {
     getMessageFromFirebase();
   }, []);
 
-  const allMessages = data.map((mes,index) => {
+  const allMessages = data.map((mes, index) => {
     return (
       <div key={index}>
         <main>
@@ -64,12 +66,23 @@ const General = () => {
       </div>
     );
   });
+  const searchUserWithEmail = async () => {
+    if (searchInput.length > 0) {
+      const user = data.filter((item) => item.email.includes(searchInput));
+      setData(user);
+      console.log(user);
+    }
+  };
   return (
     <div className={style.general}>
       <section>
         <div className={style.search}>
           <BsStopwatch className={style.watch} />
-          <input type={"search"} />
+          <input
+            onKeyDown={searchUserWithEmail}
+            onChange={(event) => setSearchInput(event.target.value)}
+            type={"text"}
+          />
         </div>
         <div className={style.allMessages}>{allMessages}</div>
 

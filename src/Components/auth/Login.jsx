@@ -22,7 +22,7 @@ const Login = () => {
     event.preventDefault();
     await signInWithEmailAndPassword(auth, email, password)
       .then((response) => {
-        nevegation("/home");
+        nevegation("/");
         window.location.reload(false)
         localStorage.setItem("user",response.user.accessToken)
         localStorage.setItem("userEmail",response.user.email)

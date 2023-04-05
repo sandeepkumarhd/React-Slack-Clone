@@ -1,0 +1,177 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  .general section {
+    width: 80%;
+    height: 92.5vh;
+    position: absolute;
+    top: 2.9rem;
+    right: 0;
+    background-color: rgb(255, 255, 255);
+    float: right;
+  }
+  .general section:first-child input {
+    width: 80%;
+    height: 6vh;
+    font-size: 1.5rem;
+    background-color: rgb(182, 196, 238);
+  }
+  .general section:first-child {
+    font-size: 2rem;
+  }
+  .watch {
+    font-size: 2.5rem;
+    margin-right: 2rem;
+  }
+  .search {
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    position: fixed;
+  }
+  .newMessage {
+    width: 80%;
+    margin:6rem auto;
+  }
+  .newMessage input{
+    padding: 0.4rem 0.9rem;
+    border-radius: 0.6rem;
+    color: rgb(19, 17, 17);
+  }
+  button {
+    cursor: pointer;
+  }
+  main {
+    background-color: rgb(119, 123, 116);
+    margin: 1rem;
+  }
+  .email2 {
+    color: blue;
+    font-size: 1rem;
+  }
+  .messages2 {
+    color: black;
+    font-size: 1.3rem;
+  }
+
+  .generalChainal {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .generalChainal div {
+    width: 8rem;
+    text-align: center;
+    height: 2rem;
+    border: 0.1rem solid wheat;
+    margin: 0.5rem -5rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+    border-radius: 0.4rem;
+  }
+  .generalChainal div:hover {
+    background-color: rgb(236, 242, 240);
+  }
+  .generalChainal span {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin: 0.5rem 1.5rem;
+    line-break: normal;
+    cursor: pointer;
+  }
+  .generalChainal span:hover {
+    height: 2rem;
+    width: 8rem;
+    cursor: pointer;
+    border-radius: 0.3rem;
+    background-color: rgb(234, 240, 240);
+  }
+  hr {
+    color: rgb(4, 4, 5);
+  }
+  .bookmark {
+    height: 2rem;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    margin: auto 1.6rem;
+    cursor: pointer;
+  }
+  .bookmark:hover {
+    background-color: rgb(234, 240, 240);
+    width: 13%;
+    border-radius: 0.3rem;
+  }
+  .notification {
+    display: flex;
+    height: 20vh;
+    font-size: 2rem;
+    margin: 1rem 3rem;
+  }
+  .notification span {
+    display: flex;
+    height: 20vh;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  .notification span span {
+    display: flex;
+    height: 20vh;
+    font-size: 1rem;
+  }
+  .sendIcon{
+    font-size: 1.5rem;
+    margin: -0.2rem -3rem;
+    cursor: pointer;
+  }
+  .span{
+    display: flex;
+    flex: 1;
+
+  }
+  .randomMessage {
+    margin-top: -5rem;
+    height: 55vh;
+    overflow-y: scroll;
+  }
+  .random div {
+
+    width: 90%;
+    height: 10vh;
+    padding: 0rem 2rem;
+    border-radius: 1rem;
+  }
+  .randomMessage{
+    height: 50vh;
+    width: 90%;
+    background-color: chocolate;
+   
+  }
+  .mainSection{
+    height: 55vh;
+    width: 80%;
+    background-color: rgb(243, 243, 246);
+    overflow-y: scroll;
+    margin: -5rem auto;
+    
+  }
+  .random{
+    display: flex;
+    justify-content: center;
+    margin: 1rem auto;
+    align-items: center;
+    background-color: rgb(241, 237, 232);
+    border-radius: 1rem;
+  }
+  .random:hover{
+    /* background-color: rgb(180, 178, 175); */
+  }
+  i{
+    cursor: pointer;
+  }
+  .trash2:hover{
+    color: red;
+  }

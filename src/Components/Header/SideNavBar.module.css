@@ -7,8 +7,7 @@ aside nav ul{
     display: flex;
     flex-direction: column;
     list-style: none;
-    justify-content: center;
-    align-items: center;
+    align-items:flex-start;
     position: sticky;
 }
 aside div input {
@@ -22,35 +21,102 @@ aside div input {
 aside div {
     width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: end;
+    /* justify-content: center; */
+    align-items: flex-start;
 }
 aside nav ul li{
-   margin: 0.2rem 0rem;
+   margin: 0.2rem 2rem;
    color: white;
    font-size: 1.2rem;
    width: 100%;
-   text-align: center;
+   /* text-align: center; */
    padding: 0.4rem 0rem;
 }
 aside nav ul li:hover{
-   background-color: rgb(44, 25, 73);
-   width: 100%;
-   border-radius: 1rem;
+   background-color: rgb(93,61,94);
+   width: 80%;
+   border-radius: 0.4rem;
    cursor: pointer;
 }
 aside nav{
-   width: 100%;
+   width: 20%;
    height: 100vh;
-   background-color: rgb(29, 8, 51);
+   background-color: rgb(63,14,64);
+   
 }
 aside{
-    width: 20%;
+    width: 100%;
     height: 100vh;
-
     position: fixed;
     background-color: rgb(248, 251, 251);
 }
 hr{
     width: 100%;
+}
+.chainalName{
+    height: 7vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.chainalName span{
+  font-size: 1.4rem;
+  color: white;
+}
+.edtiIcon{
+  font-size: 1.9rem;
+  color: rgb(5, 4, 4);
+  background-color: rgb(251, 251, 251);
+
+}
+.searchBox{
+    /* width: 100%; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(53,13,54);
+    /* float: left; */
+}
+.searchBox input{
+    height: 1.5rem;
+    margin: 0.6rem auto;
+    background-color: rgb(93,61,94);
+    font-size: 0.8rem;
+    color: white;
+    width: 61%;
+    margin-right: 8rem;
+
+}
+::placeholder{
+    font-size: 0.8rem;
+    color: white;
+}
+.userIcons{
+    font-size: 2rem;
+    margin: auto 1rem;
+    color: aliceblue;
+}
+.historyIcons{
+    margin-left: 13.5rem;
+    font-size: 1.5rem;
+    color: rgb(201, 194, 194);
+}
+.addIcon{
+    font-size: 2rem;
+    color: wheat;
+    cursor: pointer;
+    margin: auto 0.6rem;
+}
+.new{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    float: left;
+    margin-right: 1rem;
+}
+.new:hover{
+    background-color: rgb(93,61,94);
+   width: 80%;
+   /* border-radius: 0.4rem; */
+   cursor: pointer;
 }

@@ -1,14 +1,19 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
+}
+.general {
+  height: 90vh;
 }
 .general section {
   width: 80%;
-  height: 100vh;
+  height: 92.5vh;
   position: absolute;
-  top: 0;
+  top: 2.9rem;
   right: 0;
-  background-color: rgb(192, 188, 196);
+  background-color: rgb(255, 255, 255);
+  float: right;
 }
 .general section:first-child input {
   width: 80%;
@@ -23,38 +28,121 @@
   font-size: 2.5rem;
   margin-right: 2rem;
 }
-.search {
-  display: flex;
-  width: 80%;
-  justify-content: center;
-  position: fixed;
-}
+
 .newMessage {
-  position: fixed;
-  bottom: 1rem;
   width: 80%;
-  display: flex;
-  justify-content: space-evenly;
+  margin: 1rem auto;
+}
+.newMessage input {
+  padding: 0.4rem 0.9rem;
+  border-radius: 0.6rem;
+  color: rgb(19, 17, 17);
 }
 button {
   cursor: pointer;
 }
-main{
-    background-color: rgb(119, 123, 116);
-    margin: 1rem;
+main {
+  /* background-color: rgb(252, 252, 252); */
+  width: 90%;
+  height: 12vh;
+  margin: -10rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0rem 2rem;
+  border-radius: 1rem;
 }
-.email{
-    color: blue;
-    font-size: 1.2rem;
-    background-color: rgb(188, 236, 238);
+.mainMessage {
+  display: flex;
+  justify-content: center;
 }
-.messages{
-    color: black;
-    font-size: 1.4rem;
+main:hover {
+  /* background-color: rgb(220, 220, 216); */
+  cursor: pointer;
+  color: black;
 }
-.allMessages{
-    height: 80vh;
-    background-color: rgb(150, 150, 155);
-    margin: 5rem 0rem;
-    overflow-y: scroll;
+.email {
+  color: rgb(234, 234, 242);
+  font-size: 1rem;
+}
+.generalChainal {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+.generalChainal div {
+  width: 8rem;
+  text-align: center;
+  height: 2rem;
+  border: 0.1rem solid wheat;
+  margin: 0.5rem -5rem;
+  cursor: pointer;
+  font-size: 1.7rem;
+  border-radius: 0.4rem;
+}
+.generalChainal div:hover {
+  background-color: rgb(236, 242, 240);
+}
+.generalChainal span {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin: 0.5rem 1.5rem;
+  line-break: normal;
+  cursor: pointer;
+}
+.generalChainal span:hover {
+  height: 2rem;
+  width: 8rem;
+  cursor: pointer;
+  border-radius: 0.3rem;
+  background-color: rgb(234, 240, 240);
+}
+hr {
+  color: rgb(4, 4, 5);
+}
+.bookmark {
+  height: 2rem;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  margin: auto 1.6rem;
+  cursor: pointer;
+}
+.bookmark:hover {
+  background-color: rgb(234, 240, 240);
+  width: 13%;
+  border-radius: 0.3rem;
+}
+.notification {
+  display: flex;
+  height: 20vh;
+  font-size: 2rem;
+  margin: 1rem 3rem;
+}
+.notification span {
+  display: flex;
+  height: 20vh;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.notification span span {
+  display: flex;
+  height: 20vh;
+  font-size: 1rem;
+}
+.sendIcon {
+  font-size: 1.5rem;
+  margin: -0.2rem -3rem;
+  cursor: pointer;
+}
+.message {
+  margin-top: -5rem;
+  height: 55vh;
+  overflow-y: scroll;
+}
+i{
+  cursor: pointer;
+}
+.trash:hover{
+  color: red;
 }

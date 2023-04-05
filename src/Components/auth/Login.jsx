@@ -10,6 +10,7 @@ import app from "./Firebase";
 const Login = () => {
   const nevegation = useNavigate();
   const [email, setEmail] = useState("");
+  const [name, setName] = useState("");
   const [password, setPassword] = useState("");
   const auth = getAuth(app);
   const emailChangeHandler = (event) => {
@@ -23,9 +24,9 @@ const Login = () => {
     await signInWithEmailAndPassword(auth, email, password)
       .then((response) => {
         nevegation("/");
-        window.location.reload(false)
-        localStorage.setItem("user",response.user.accessToken)
-        localStorage.setItem("userEmail",response.user.email)
+        window.location.reload(false);
+        localStorage.setItem("user", response.user.accessToken);
+        localStorage.setItem("userName",name)
       })
       .catch((error) => {
         const errorCode = error.code;
@@ -33,18 +34,26 @@ const Login = () => {
         alert(errorCode, errorMessage);
       });
   };
-  const toggleHandler = () =>{
-    nevegation("/")
+  const toggleHandler = () => {
+    nevegation("/");
+  };
+  const userNameHandler = (event) =>{
+    setName(event.target.value)
+
   }
   return (
     <div>
       <form action="" onSubmit={submitHandler}>
         <div className={styles.header}>
           <h2>
-            <IoLogoSlack /> <span>Slack</span>{" "}
+            <IoLogoSlack /> <span>Slack-Login</span>{" "}
           </h2>
           <div>
-            <TfiEmail className={styles.icon}/>
+            <i className={`fa-solid fa-file-signature ${styles.icon}`}></i>
+            <input onChange={userNameHandler} placeholder="User Name" />
+          </div>
+          <div>
+            <TfiEmail className={styles.icon} />
             <input onChange={emailChangeHandler} placeholder="User Email" />
           </div>
           <div>

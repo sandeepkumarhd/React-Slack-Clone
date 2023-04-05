@@ -41,12 +41,8 @@ const Register = () => {
       <form action="" onSubmit={submitHandler}>
         <div className={styles.header}>
           <h2>
-            <IoLogoSlack /> <span>Slack</span>{" "}
+            <IoLogoSlack /> <span>Slack-Sign-up</span>{" "}
           </h2>
-          <div>
-            <FaUser className={styles.icon} />
-            <input placeholder="User Name" />
-          </div>
           <div>
             <TfiEmail className={styles.icon} />
             <input onChange={emailChangeHandler} placeholder="User Email" />
